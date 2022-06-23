@@ -143,3 +143,9 @@
   "remote.SSH.configFile": "/tmp/gitpod_ssh_config-7452-gfEdJk4xAPXF"
 }
 </pre>
+
+## Dumping
+
+- ```docker cp ./dumps/FILE.sql <CONTAINER_ID>:/```
+- ```docker exec -it <CONTAINER_ID> sh```
+- ```psql -U postgres -d dashboard -f FILE.sql```
